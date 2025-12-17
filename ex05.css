@@ -1,3 +1,28 @@
+#div5 {background-color:gold; height: 100px; width: 100px;}
+img{height: 100px; width: 100px; display:none;}
+#div5:hover > img {display: block;}
+#div5:hover > div {display: none;}
+/*
+#div5:hover > img {display: block;}
+#div5:hover > div {display: none;}
+*/
+/*
+#div5:hover{
+    & > img{display: block;}
+    & > div{display: none;}
+} */
+ #div5 {background-color: aqua;
+        &:hover{
+            > img{display: block;}
+            > div{display: none;}
+        }
+}
+
+#div2 {background-color: gold; height: 100px; }
+#div3 {background-color: aquamarine; height: 100px; width: 100px; }
+#div4 {background-color: brown; height: 50px; }
+/* 뭔가 오류가 났음 */
+
 #div1 {background-color: red; display:inline; text-align:center; width:100px; height:100px;}
 #h1 {background-color: gold; width: 100px; height: 100px;}
 /*
@@ -5,7 +30,6 @@
     block : 사이즈 조정 가능, 엔터 적용
     iline-block : 사이즈 조정 가능, 가로 배치
     none : 숨김
-
 */
-#span {background-color: green; display:inline block; text-align:center; width: 100px; height: 100px;}
+#span {background-color: green; display:inline-block; text-align:center; width: 100px; height: 100px;}
 #a {background-color: gray; width: 100px; height: 100px;}
